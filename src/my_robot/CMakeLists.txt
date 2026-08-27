@@ -23,4 +23,10 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+install(
+  PROGRAMS
+    "ROS2 fundamental example/py_minimal_publisher.py"
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()
