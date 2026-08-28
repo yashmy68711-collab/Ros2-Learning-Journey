@@ -52,3 +52,31 @@ My journey learning ROS 2, robotics, simulation, robot control, and motion plann
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+## Day 3 — ROS 2 Python Subscriber & Publisher-Subscriber Communication
+
+### What I learned
+
+- Created my first ROS 2 Python Subscriber node.
+- Learned how a Subscriber receives messages from a ROS 2 topic.
+- Used `rclpy` and the ROS 2 `Node` class.
+- Used `std_msgs/msg/String` for receiving messages.
+- Learned how to create a subscription using `create_subscription()`.
+- Learned how callback functions work in ROS 2.
+- Connected the Subscriber to the `/py_example_topic` topic.
+- Tested communication between the Publisher and Subscriber.
+- Learned how a Publisher sends messages and a Subscriber receives them.
+- Updated `CMakeLists.txt` to install the Subscriber executable.
+- Used `ros2 pkg executables` to verify the available executables.
+- Created a Bash script to start both Publisher and Subscriber.
+- Learned how to run ROS 2 nodes from a Bash script.
+- Used `&` to run the Publisher in the background.
+- Used `sleep` to wait before starting the Subscriber.
+- Learned how `trap` and `SIGINT` can be used for cleanup.
+- Used `Ctrl+C` to stop the running ROS 2 processes.
+- Used `chmod +x` to make the Bash script executable.
+- Successfully built and tested the complete Publisher-Subscriber system.
+
+### Result
+
+Successfully ran the Publisher and Subscriber together and verified that messages were being published and received through the ROS 2 topic.
