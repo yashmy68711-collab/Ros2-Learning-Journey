@@ -80,3 +80,31 @@ My journey learning ROS 2, robotics, simulation, robot control, and motion plann
 ### Result
 
 Successfully ran the Publisher and Subscriber together and verified that messages were being published and received through the ROS 2 topic.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Day 4 — ROS 2 C++ Publisher
+
+### What I learned
+
+- Created my first ROS 2 C++ Publisher node.
+- Learned how to create a ROS 2 C++ node using `rclcpp`.
+- Learned how to use the `rclcpp::Node` class.
+- Used `std_msgs/msg/String` for publishing string messages.
+- Created a Publisher using `create_publisher()`.
+- Created a timer using `create_wall_timer()`.
+- Used a timer callback to publish messages periodically.
+- Published messages on the `/cpp_example_topic` topic.
+- Used a counter to create continuously increasing messages.
+- Learned how `publisher_->publish()` sends messages to a ROS 2 topic.
+- Learned how to initialize and shut down ROS 2 in C++.
+- Updated `CMakeLists.txt` to build and install the C++ executable.
+- Updated `package.xml` with the required C++ dependencies.
+- Built the ROS 2 package successfully using `colcon build`.
+- Ran the C++ publisher successfully using `ros2 run`.
+- Verified the topic using `ros2 topic list`.
+- Verified the published messages using `ros2 topic echo`.
+- Confirmed that the publisher was publishing messages at 2 Hz.
+
+- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
