@@ -10,7 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
-# C++ publisher
+# C++ Publisher
 add_executable(cpp_minimal_publisher
   src/cpp_minimal_publisher.cpp
 )
@@ -20,18 +20,21 @@ ament_target_dependencies(cpp_minimal_publisher
   std_msgs
 )
 
-# Install C++ executable
-install(
-  TARGETS cpp_minimal_publisher
-  DESTINATION lib/${PROJECT_NAME}
+# C++ Subscriber
+add_executable(cpp_minimal_subscriber
+  src/cpp_minimal_subscriber.cpp
 )
 
-# Install Python nodes
+ament_target_dependencies(cpp_minimal_subscriber
+  rclcpp
+  std_msgs
+)
 
+# Install C++ executables
 install(
-  PROGRAMS
-    "${CMAKE_CURRENT_SOURCE_DIR}/ROS2 fundamental example/py_minimal_publisher.py"
-    "${CMAKE_CURRENT_SOURCE_DIR}/ros2_fundamentals_examples/py_minimal_subscriber.py"
+  TARGETS
+    cpp_minimal_publisher
+    cpp_minimal_subscriber
   DESTINATION lib/${PROJECT_NAME}
 )
 
