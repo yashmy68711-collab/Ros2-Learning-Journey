@@ -108,3 +108,21 @@ Successfully ran the Publisher and Subscriber together and verified that message
 
 - ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Day 5 — C++ Publisher in ROS 2
+
+Today I learned how to create a basic **C++ Publisher Node** in ROS 2.
+
+### What I Learned
+
+- How to create a C++ ROS 2 node using `rclcpp`
+- How to create a publisher using `create_publisher()`
+- How to publish messages using `std_msgs/msg/String`
+- How to use a timer to publish messages at a fixed rate
+- How to add a C++ executable in `CMakeLists.txt`
+- How to build the package using `colcon build`
+- How to run a C++ node using `ros2 run`
+- How to inspect a topic using ROS 2 CLI commands
+
+### C++ Publisher
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
