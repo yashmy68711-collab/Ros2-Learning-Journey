@@ -126,3 +126,26 @@ Today I learned how to create a basic **C++ Publisher Node** in ROS 2.
 ### C++ Publisher
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Day 6 — Unit Testing with Pytest in ROS 2
+
+Today I learned how to create and run **unit tests for a ROS 2 Python node using pytest**.
+
+### What I Learned
+
+- How unit testing helps verify ROS 2 node behavior.
+- How to create a test file using `pytest`.
+- How to test the `MinimalPyPublisher` node.
+- How to use `assert` statements to check expected results.
+- How to use `rclpy.init()` and `rclpy.shutdown()` in tests.
+- How to create a `test/pytest` directory for Python tests.
+- How to integrate pytest with ROS 2 using `ament_cmake_pytest`.
+- How to use `ament_add_pytest_test()` in `CMakeLists.txt`.
+- How to run tests using `colcon test`.
+- How to check detailed test results using `colcon test-result --verbose`.
+- Fixed a Python package import issue by renaming the package folder to `ros2_fundamentals_examples`.
+- Added `__init__.py` so Python recognizes the folder as a package.
+- Updated `CMakeLists.txt` to install the Python package.
+- Successfully rebuilt and tested the ROS 2 package.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
