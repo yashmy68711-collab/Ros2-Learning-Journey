@@ -144,8 +144,5 @@ Today I learned how to create and run **unit tests for a ROS 2 Python node using
 - How to run tests using `colcon test`.
 - How to check detailed test results using `colcon test-result --verbose`.
 - Fixed a Python package import issue by renaming the package folder to `ros2_fundamentals_examples`.
-- Added `__init__.py` so Python recognizes the folder as a package.
-- Updated `CMakeLists.txt` to install the Python package.
-- Successfully rebuilt and tested the ROS 2 package.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
