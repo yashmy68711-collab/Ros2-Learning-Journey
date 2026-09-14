@@ -64,26 +64,3 @@ class MinimalPyPublisher(Node):
         # Increase counter
         self.i += 1
 
-def main(args=None):
-    """
-    Main function to start the ROS 2 node.
-    """
-
-    # Initialize ROS 2
-    rclpy.init(args=args)
-
-    # Create publisher node
-    minimal_py_publisher = MinimalPyPublisher()
-
-    # Keep the node running
-    rclpy.spin(minimal_py_publisher)
-
-    # Destroy the node
-    minimal_py_publisher.destroy_node()
-
-    # Shutdown ROS 2
-    rclpy.shutdown()
-
-
-if __name__ == '__main__':
-    main()
