@@ -146,3 +146,37 @@ Today I learned how to create and run **unit tests for a ROS 2 Python node using
 - Fixed a Python package import issue by renaming the package folder to `ros2_fundamentals_examples`.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Day 7 — Creating and Visualizing a Robotic Arm with URDF
+
+### What I Learned
+
+- How URDF is used to describe the physical structure of a robot.
+- Difference between URDF and Xacro files.
+- How to create a ROS 2 robot description package.
+- How to organize robot meshes, URDF, and Xacro files.
+- How to use `.dae`, `.stl`, and `.png` mesh/visual files for a robot model.
+- How to create and use the MyCobot 280 robot description.
+- How to define links and joints in a robotic arm.
+- How Xacro files can be used to organize complex robot descriptions.
+- How to install ROS 2 dependencies using `rosdep`.
+- How to build the robot description packages using `colcon build`.
+- How to visualize a robot model in RViz2.
+- How to use the Joint State Publisher GUI to control robot joints.
+- How TF coordinate axes represent the X, Y, and Z axes of robot links.
+- How to verify that the robot model and joints are working correctly in RViz2.
+- How to launch a URDF/Xacro model using `urdf_tutorial`.
+- Fixed a ROS 2 Jazzy `fastcdr` version/build issue while building the workspace.
+
+### Practical Work
+
+Created and visualized the **MyCobot 280** robotic arm in RViz2 using:
+
+- `mycobot_description`
+- `mycobot_ros2`
+- URDF/Xacro
+- Robot meshes
+- RViz2
+- Joint State Publisher
+
+Successfully moved the robot joints using the Joint State Publisher GUI and verified the robot model in RViz2.
