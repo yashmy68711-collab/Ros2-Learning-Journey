@@ -179,4 +179,3 @@ Created and visualized the **MyCobot 280** robotic arm in RViz2 using:
 - RViz2
 - Joint State Publisher
 
-Successfully moved the robot joints using the Joint State Publisher GUI and verified the robot model in RViz2.
